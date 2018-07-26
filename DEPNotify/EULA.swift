@@ -18,7 +18,7 @@ class EULA: NSViewController {
     @IBOutlet weak var cancelButton: NSButton!
     @IBOutlet weak var continueButton: NSButton!
     @IBOutlet weak var agreeCheck: NSButton!
-
+    
     var PathToPlistDefault = "/Users/Shared/DEPNotify.plist"
     var plistPath = ""
     
@@ -41,24 +41,54 @@ Ut molestie arcu ligula, et porttitor ex facilisis dapibus. Vivamus molestie lec
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = CGColor.white
         
-        // Get EULA text from Preferences file
+        // Get EULA texts from Preferences file
         if let pathToEULA = UserDefaults.standard.string(forKey: "pathToEULA") {
-            do {
-                // Get the contents
-                let eula = try NSString(contentsOfFile: pathToEULA, encoding: String.Encoding.utf8.rawValue)
-                print(pathToEULA)
-                //EULATextView .insertText(contents)
-                eulaContent.string = eula as String
+            
+            // Get eula file extension
+            let fileExtension = NSURL(fileURLWithPath: pathToEULA).pathExtension
+            
+            // Check if eula file exists
+            if FileManager.default.fileExists(atPath: pathToEULA) {
+            
+                do {
+                // Get Plain Text Contents
+                if fileExtension == "txt" {
+                    let eula = try NSString(contentsOfFile: pathToEULA, encoding: String.Encoding.utf8.rawValue)
+                    print(pathToEULA)
+                    eulaContent.string = eula as String
+                
+                // Get Rich Text Contents
+                } else if fileExtension == "rtf" {
+                    // Get the contents
+                    let eula = NSMutableAttributedString(path: pathToEULA, documentAttributes: nil)
+                    print(pathToEULA)
+                    eulaContent.textStorage?.setAttributedString(eula!)
+
+                }
             }
             catch let error as NSError {
                 print("No terms file found: \(error)")
-                eulaContent.string = "Lorem Ipsum"
+                eulaContent.string = defaultEULA
             }
-
+            
         } else {
             // set the EULA text to a placeholder
-            
             eulaContent.string = defaultEULA
+        }
+        }
+        
+        // Get the EULA Main Title Window from Preferences file
+        if let EULAMainTitle = UserDefaults.standard.string(forKey: "EULAMainTitle"){
+            eulaTitle.stringValue = EULAMainTitle
+        } else {
+            print ("No EULA Title in Preferences file")
+        }
+        
+        // Get the EULA Subtitle Window from Preferences file
+        if let EULASubTitle = UserDefaults.standard.string(forKey: "EULASubTitle"){
+            eulaSubTitle.stringValue = EULASubTitle
+        } else {
+            print ("No EULA Subtitle in Preferences file")
         }
     }
 
@@ -88,15 +118,24 @@ Ut molestie arcu ligula, et porttitor ex facilisis dapibus. Vivamus molestie lec
     }
     
     @IBAction func continueButtonAction(_ sender: Any) {
-        if let PathToPlistFileValue = UserDefaults.standard.string(forKey: "PathToPlistFile"){
+        if let PathToPlistFileValue = UserDefaults.standard.string(forKey: "pathToPlistFile"){
             plistPath = "\(PathToPlistFileValue)DEPNotify.plist"
         } else {
              plistPath = PathToPlistDefault
         }
         
+        // Set timestamp
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-mm-dd HH:mm:ss"
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        let LastRegistrationDate = dateFormatter.string(from: Date())
+        print (LastRegistrationDate)
+        
+    
         if FileManager.default.fileExists(atPath: plistPath) {
             let plistContent = NSMutableDictionary(contentsOfFile: plistPath)!
             plistContent.setValue(true, forKey: "EULA Agreed")
+            plistContent.setValue(LastRegistrationDate, forKey: "Regsitration Date")
             plistContent.write(toFile: plistPath, atomically: true)
             print("Is Plist file created: Yes")
             writeBomFile()

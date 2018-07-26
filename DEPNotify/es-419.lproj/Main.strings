@@ -1,6 +1,6 @@
 
 /* Class = "NSTextFieldCell"; title = "Agree to the following terms and conditions to start using this Mac."; ObjectID = "26E-TZ-RPo"; */
-"26E-TZ-RPo.title" = "Acepte estos términos y condiciones para comenzar a usar este Mac.";
+"26E-TZ-RPo.title" = "Acepte los siguientes términos y condiciones para comenzar a utilizar este Mac.";
 
 /* Class = "NSTextFieldCell"; title = "Registering your Mac..."; ObjectID = "2N9-yl-FVX"; */
 "2N9-yl-FVX.title" = "Registrando su Mac...";
@@ -12,13 +12,16 @@
 "AYu-sK-qS6.title" = "Main Menu";
 
 /* Class = "NSTextFieldCell"; title = "We are setting up your Mac with a standard suite of software and security settings, including every day apps, configuration profiles and security policies.\n\nThis process could take up to 20 minutes so please don't restart or shutdown your Mac until we are done."; ObjectID = "BNQ-7b-pHr"; */
-"BNQ-7b-pHr.title" = "Estamos configurando su Mac con una suite estándar de software y ajustes de seguridad, incluyendo apps de uso diario, perfiles de configuración y políticas de seguridad.\n\nEste proceso puede toma hasta 20 minutos por lo que por favor no reinicie o apague su computado hasta que hayamos terminado.";
+"BNQ-7b-pHr.title" = "Estamos configurando su Mac con la suite estándar de software y ajustes de seguridad, incluyendo apps de uso diaio, perfiles de confguración y políticas de seguridad.\n\nEste proceso puede tomar hasta 20 minutos por lo que le pedimos no reiniciar ni apagar su Mac hsata finalizar.";
 
 /* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "Dql-Ou-14P"; */
 "Dql-Ou-14P.title" = "Item 1";
 
+/* Class = "NSButtonCell"; title = "This Mac stores sensitive information"; ObjectID = "Hr4-df-sA4"; */
+"Hr4-df-sA4.title" = "Este Mac contiene información sensible";
+
 /* Class = "NSWindow"; title = "Welcome to your Mac"; ObjectID = "IQv-IB-iLA"; */
-"IQv-IB-iLA.title" = "Bienvenido a nuevo Macc";
+"IQv-IB-iLA.title" = "Bienvenido a su Mac";
 
 /* Class = "NSWindow"; title = "Window"; ObjectID = "J5k-eo-Gj3"; */
 "J5k-eo-Gj3.title" = "Window";
@@ -30,25 +33,22 @@
 "Oh4-GU-LCn.title" = "Item 3";
 
 /* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "TVf-dW-aNe"; */
-"TVf-dW-aNe.title" = "Cancel";
+"TVf-dW-aNe.title" = "Cancelar";
 
 /* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "WAu-Mu-W4i"; */
 "WAu-Mu-W4i.title" = "Item 2";
 
 /* Class = "NSTextFieldCell"; title = "Starting configuration..."; ObjectID = "Wes-CZ-MzJ"; */
-"Wes-CZ-MzJ.title" = "Iniciando Configuración...";
+"Wes-CZ-MzJ.title" = "Iniciando la configuración...";
 
-/* Class = "NSButtonCell"; title = "This Mac stores sensitive information"; ObjectID = "Wsg-be-yOR"; */
-"Wsg-be-yOR.title" = "Este Mac almacena información sensible";
-
-/* Class = "NSButtonCell"; title = "Continuar"; ObjectID = "Y7g-x8-UaJ"; */
+/* Class = "NSButtonCell"; title = "Continue"; ObjectID = "Y7g-x8-UaJ"; */
 "Y7g-x8-UaJ.title" = "Continuar";
 
 /* Class = "NSButtonCell"; title = "Continue"; ObjectID = "aG4-FN-kFN"; */
 "aG4-FN-kFN.title" = "Continuar";
 
 /* Class = "NSTextFieldCell"; title = "End User Level Agreement"; ObjectID = "dS2-ZB-9vG"; */
-"dS2-ZB-9vG.title" = "Acuerdo de Nivel de Usuario Final";
+"dS2-ZB-9vG.title" = "Acuerdo de Licencia de Usuario Final";
 
 /* Class = "NSButtonCell"; title = "I Agree"; ObjectID = "f4s-jy-BuA"; */
 "f4s-jy-BuA.title" = "Acepto";

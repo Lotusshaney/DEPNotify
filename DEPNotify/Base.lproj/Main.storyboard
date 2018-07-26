@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment version="101100" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
@@ -63,8 +63,8 @@
                                 </constraints>
                             </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S7k-po-3Vp">
-                                <rect key="frame" x="169" y="266" width="362" height="39"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Welcome to your new Mac!" id="uNN-nN-sFa">
+                                <rect key="frame" x="169" y="316" width="362" height="39"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" alignment="center" title="Welcome to your new Mac!" id="uNN-nN-sFa">
                                     <font key="font" metaFont="systemThin" size="32"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -79,7 +79,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="OuP-hY-kcg">
-                                <rect key="frame" x="86" y="120" width="528" height="120"/>
+                                <rect key="frame" x="86" y="134" width="528" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="tnA-1k-wma"/>
                                 </constraints>
@@ -113,20 +113,20 @@ This process could take up to 20 minutes so please don't restart or shutdown you
                                 </connections>
                             </button>
                             <imageView focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="660" placeholderIntrinsicHeight="105" translatesAutoresizingMaskIntoConstraints="NO" id="ybm-7R-2cn">
-                                <rect key="frame" x="20" y="325" width="660" height="105"/>
+                                <rect key="frame" x="20" y="365" width="660" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="0ER-iN-OjX"/>
+                                    <constraint firstAttribute="height" constant="65" id="0ER-iN-OjX"/>
                                     <constraint firstAttribute="width" constant="660" id="Gqz-2V-ChZ"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="105" id="Puw-fu-Vz7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Puw-fu-Vz7"/>
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" focusRingType="none" alignment="left" imageScaling="proportionallyUpOrDown" image="macbasics_2x" id="vcg-o4-XhS" userLabel="Logo"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AnR-P2-Lqa">
-                                <rect key="frame" x="20" y="117" width="660" height="313"/>
+                                <rect key="frame" x="0.0" y="122" width="700" height="175"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="660" id="PTI-hM-EKO"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="313" id="d5O-Jf-xM3"/>
-                                    <constraint firstAttribute="height" constant="313" id="n0D-AN-vN7"/>
+                                    <constraint firstAttribute="width" constant="700" id="PTI-hM-EKO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="175" id="d5O-Jf-xM3"/>
+                                    <constraint firstAttribute="height" constant="175" id="n0D-AN-vN7"/>
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="MainImageText" id="Wpc-HA-0GA" userLabel="Image"/>
                             </imageView>
@@ -136,8 +136,8 @@ This process could take up to 20 minutes so please don't restart or shutdown you
                             <constraint firstItem="XoJ-GQ-tx3" firstAttribute="centerX" secondItem="ybm-7R-2cn" secondAttribute="centerX" id="4f9-pV-xpd"/>
                             <constraint firstItem="OuP-hY-kcg" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="LX4-7K-oB5"/>
                             <constraint firstItem="XoJ-GQ-tx3" firstAttribute="centerX" secondItem="S7k-po-3Vp" secondAttribute="centerX" id="Mw4-61-dtH"/>
-                            <constraint firstItem="S7k-po-3Vp" firstAttribute="top" secondItem="ybm-7R-2cn" secondAttribute="bottom" constant="20" id="MxK-sl-gAb"/>
-                            <constraint firstItem="PdX-76-P6c" firstAttribute="top" secondItem="OuP-hY-kcg" secondAttribute="bottom" constant="16" id="O1Y-qe-1Yw"/>
+                            <constraint firstItem="S7k-po-3Vp" firstAttribute="top" secondItem="ybm-7R-2cn" secondAttribute="bottom" constant="10" id="MxK-sl-gAb"/>
+                            <constraint firstItem="PdX-76-P6c" firstAttribute="top" secondItem="OuP-hY-kcg" secondAttribute="bottom" constant="30" id="O1Y-qe-1Yw"/>
                             <constraint firstItem="XoJ-GQ-tx3" firstAttribute="centerX" secondItem="N48-Mi-Fab" secondAttribute="centerX" id="OWM-Xf-uKb"/>
                             <constraint firstItem="OuP-hY-kcg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="88" id="RZc-w4-2xk"/>
                             <constraint firstItem="N48-Mi-Fab" firstAttribute="top" secondItem="PdX-76-P6c" secondAttribute="bottom" constant="6" id="Rf1-EC-Z6A"/>
@@ -148,10 +148,10 @@ This process could take up to 20 minutes so please don't restart or shutdown you
                             <constraint firstItem="MBk-su-WHI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="dPK-BX-LmW"/>
                             <constraint firstItem="XoJ-GQ-tx3" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="dyu-4l-kyN"/>
                             <constraint firstItem="XoJ-GQ-tx3" firstAttribute="top" secondItem="MBk-su-WHI" secondAttribute="top" id="e3p-37-eLt"/>
-                            <constraint firstItem="AnR-P2-Lqa" firstAttribute="leading" secondItem="lC2-WV-ZF0" secondAttribute="leading" constant="20" id="eyY-Gf-q2F"/>
+                            <constraint firstItem="AnR-P2-Lqa" firstAttribute="leading" secondItem="lC2-WV-ZF0" secondAttribute="leading" id="eyY-Gf-q2F"/>
                             <constraint firstItem="ybm-7R-2cn" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="f8j-11-zhJ"/>
                             <constraint firstItem="lC2-WV-ZF0" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="iGX-MS-Sg9"/>
-                            <constraint firstItem="PdX-76-P6c" firstAttribute="top" secondItem="AnR-P2-Lqa" secondAttribute="bottom" constant="13" id="j5c-5o-Tnd"/>
+                            <constraint firstItem="PdX-76-P6c" firstAttribute="top" secondItem="AnR-P2-Lqa" secondAttribute="bottom" constant="18" id="j5c-5o-Tnd"/>
                             <constraint firstItem="XoJ-GQ-tx3" firstAttribute="top" secondItem="N48-Mi-Fab" secondAttribute="bottom" constant="30" id="p4u-Wc-Gl7"/>
                             <constraint firstItem="XoJ-GQ-tx3" firstAttribute="centerY" secondItem="lC2-WV-ZF0" secondAttribute="centerY" id="qat-MK-0y3"/>
                             <constraint firstItem="XoJ-GQ-tx3" firstAttribute="centerX" secondItem="lC2-WV-ZF0" secondAttribute="centerX" id="toH-eU-CE9"/>
@@ -233,7 +233,7 @@ This process could take up to 20 minutes so please don't restart or shutdown you
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1d-1X-Mtk">
                                 <rect key="frame" x="18" y="366" width="614" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="End User Level Agreement" id="dS2-ZB-9vG">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="End User License Agreement" id="dS2-ZB-9vG">
                                     <font key="font" metaFont="systemThin" size="28"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -288,14 +288,14 @@ Gw
                                 <rect key="frame" x="20" y="51" width="610" height="277"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" ambiguous="YES" id="KC3-Iu-etL">
-                                    <rect key="frame" x="1" y="1" width="608" height="275"/>
+                                    <rect key="frame" x="1" y="1" width="593" height="275"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView ambiguous="YES" editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsCharacterPickerTouchBarItem="NO" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" id="6Fj-1A-uEj">
-                                            <rect key="frame" x="0.0" y="0.0" width="608" height="275"/>
+                                        <textView ambiguous="YES" editable="NO" verticallyResizable="YES" allowsCharacterPickerTouchBarItem="NO" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" id="6Fj-1A-uEj">
+                                            <rect key="frame" x="0.0" y="0.0" width="593" height="275"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="608" height="275"/>
+                                            <size key="minSize" width="593" height="275"/>
                                             <size key="maxSize" width="610" height="10000000"/>
                                             <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </textView>
@@ -307,7 +307,7 @@ Gw
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="85b-Hd-Opy">
-                                    <rect key="frame" x="593" y="1" width="16" height="275"/>
+                                    <rect key="frame" x="594" y="1" width="15" height="275"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -319,6 +319,7 @@ Gw
                         <outlet property="continueButton" destination="8KG-UX-gvU" id="UIQ-Zr-Zx9"/>
                         <outlet property="eulaContent" destination="6Fj-1A-uEj" id="vfN-mM-WyY"/>
                         <outlet property="eulaSubTitle" destination="Wve-JU-SsZ" id="WSA-xC-LZQ"/>
+                        <outlet property="eulaTextField" destination="KC3-Iu-etL" id="I3g-xw-iYn"/>
                         <outlet property="eulaTitle" destination="t1d-1X-Mtk" id="DL6-wZ-iFZ"/>
                     </connections>
                 </viewController>
@@ -353,7 +354,7 @@ Gw
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edT-pR-hAT">
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edT-pR-hAT" userLabel="UIText Field Upper">
                                 <rect key="frame" x="222" y="218" width="210" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" drawsBackground="YES" id="Zjj-fe-pv6">
@@ -436,11 +437,6 @@ Gw
                                     </menu>
                                 </popUpButtonCell>
                             </popUpButton>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LH9-bY-99a">
-                                <rect key="frame" x="186" y="312" width="148" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="mbpWhiteTick" id="WHm-9n-OHa"/>
-                            </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wt2-nw-1XA">
                                 <rect key="frame" x="141" y="265" width="238" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -456,6 +452,9 @@ Gw
                                 <buttonCell key="cell" type="push" title="Register" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" focusRingType="none" allowsMixedState="YES" imageScaling="proportionallyDown" inset="2" id="pfx-G8-3O4">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="registerButton:" target="X7W-kI-KNI" id="aTO-BX-wEm"/>
@@ -486,6 +485,11 @@ Gw
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LH9-bY-99a">
+                                <rect key="frame" x="170" y="305" width="180" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="mbpWhiteTick" id="WHm-9n-OHa"/>
+                            </imageView>
                         </subviews>
                     </view>
                     <connections>
@@ -495,20 +499,24 @@ Gw
                         <outlet property="UIPopUpMenuUpperLabel" destination="mNN-3t-GYA" id="Bhk-Er-fJR"/>
                         <outlet property="UITextFieldLower" destination="Grl-Ok-YZZ" id="lzy-He-TOc"/>
                         <outlet property="UITextFieldLowerLabel" destination="zhk-Ha-CmN" id="6BB-ac-gWq"/>
-                        <outlet property="UITextFieldUpper" destination="edT-pR-hAT" id="Lgj-e2-aSV"/>
+                        <outlet property="UITextFieldUpper" destination="edT-pR-hAT" id="5Fx-1Y-cM4"/>
+                        <outlet property="UITextFieldUpperCell" destination="Zjj-fe-pv6" id="KLv-kk-20w"/>
                         <outlet property="UITextFieldUpperLabel" destination="nyp-OT-JBE" id="8Fn-qq-kyd"/>
                         <outlet property="UItextField1Required" destination="epV-EV-PJn" id="2h7-XX-Ltd"/>
                         <outlet property="UItextField2Required" destination="BOQ-F8-NYa" id="A2W-im-P51"/>
                         <outlet property="registerButton" destination="ZKf-xb-Pmu" id="fnj-hQ-QCF"/>
                         <outlet property="registerMainTitle" destination="Wt2-nw-1XA" id="JWQ-0c-Lnd"/>
+                        <outlet property="registerTitlePicture" destination="LH9-bY-99a" id="iOv-ah-CEG"/>
                         <outlet property="registeringYourMacIndicator" destination="zc2-ZF-heF" id="IRq-E0-Afj"/>
                         <outlet property="registeringYourMacLabel" destination="Kj0-Bu-MEo" id="4tu-H4-kgY"/>
+                        <outlet property="registrationView" destination="0rd-4s-Ada" id="9ds-I2-Hxb"/>
                         <outlet property="sensitiveInformation" destination="0I5-PW-OMu" id="pez-an-nTZ"/>
                         <outlet property="separator" destination="YHm-ba-bDC" id="ezN-bP-Y5Z"/>
+                        <outlet property="view" destination="0rd-4s-Ada" id="UAw-kF-Whi"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-1" y="1640"/>
+            <point key="canvasLocation" x="-1" y="1639.5"/>
         </scene>
     </scenes>
     <resources>
